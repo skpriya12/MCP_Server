@@ -58,3 +58,6 @@ def multiply(a: int, b: int) -> int:
 if __name__ == "__main__":
     print("Starting MCP server with AI agent and tools...")
     mcp.run(transport="sse")
+
+# Expose ASGI app for Render to run via `uvicorn server:app`
+app = mcp.app
